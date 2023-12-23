@@ -1,4 +1,4 @@
-package apps.ucu.edu.ua.task2;
+package apps.ucu.edu.ua.tasks;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package apps.ucu.edu.ua.task2;
+package apps.ucu.edu.ua.tasks;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.UUID;
 
 public class Group<T> extends Task<T> {
-    public String groupUuid;
     private List<Task<T>> tasks;
 
     public Group<T> addTask(Task<T> task) {
@@ -20,7 +19,7 @@ public class Group<T> extends Task<T> {
     @Override
     public void freeze() {
         super.freeze();
-        groupUuid = UUID.randomUUID().toString();
+        UUID.randomUUID().toString();
         for (Task<T> task: tasks) {
             task.freeze();
         }
